@@ -48,8 +48,9 @@ kann da gerne aushelfen.
 
 
 ##Weiteres:
-fals jemand Interesse an einem weiterem DDD(DomainDrivenDesign) Projekt hat:
+fals jemand Interesse an einem weiteren DDD(DomainDrivenDesign) Beispiel-Projekt hat, hier ist es:
 [DDDOnlineStore.Net](https://github.com/thecodemonkey/DDDOnlineStore.Net)
-Bei diesem Projekt  liegt der Focus vor allem auf der Kombination zwischen DDD und EntityFramework. Auch wenn ich die EF Implementierung mittlerweile etwas anderes machen würd, ist die ein möglcher Ansatz! 
+Bei diesem Projekt liegt der Focus vor allem auf der Kombination zwischen DDD und EntityFramework. 
+Auch wenn ich die EF Implementierung mittlerweile etwas anders machen würde, ist dies ein möglcher Ansatz! 
 
 
