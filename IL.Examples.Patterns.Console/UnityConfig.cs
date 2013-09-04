@@ -19,10 +19,10 @@ namespace IL.Examples.Patterns.Console
 
             string rootPath = ConfigurationManager.AppSettings["dataPath"];
 
-            container.RegisterType<IUserRepository, XmlUserRepository>(
-                new InjectionConstructor(rootPath));
+            //container.RegisterType<IUserRepository, XmlUserRepository>(
+            //    new InjectionConstructor(rootPath));
 
-            //container.RegisterType<IUserRepository, EFUserRepository>();
+            container.RegisterType<IUserRepository, EFUserRepository>();
 
             return container;
         }
