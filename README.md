@@ -1,10 +1,11 @@
 il.examples.patterns
 ====================
 
-##Beispielprojekt zum Vortrag vom 04.09.2013:  "Softwaredesign, das Zusammenspiel der Patterns"
+Beispielprojekt zum Vortrag vom 04.09.2013:  "Softwaredesign, das Zusammenspiel der Patterns"
 
 
-###Hier sind die PPT Slides, dies ist ein direkter Link zu Skydrive Datei:
+##Die Slides
+Hier sind die PPT Slides, dies ist ein direkter Link zu Skydrive Datei:
 [.Net UserGroupe Dortmund-Vortrag.pptx](http://sdrv.ms/15vnNIg "Softwaredesign, das Zusammenspiel der Patterns")
 
 
@@ -42,5 +43,13 @@ Das Konsolenprojekt "IL.Examples.Console" hat in der App.config einen festen Con
 </pre>
 
 Dieser sollte durch eigenen ersetzt werden. Der Pfad ist relativ zum WebApplication projekt in derselben Solution!
-Das WPF Projekt ist leider noch nicht fertiggeworden, das werde ich aber auf jeden Fall nachholen, wenn eine Lust hat 
+Das WPF Projekt ist leider noch nicht fertiggeworden, das werde ich aber auf jeden Fall nachholen, wenn Einer Lust hat, der 
 kann da gerne aushelfen.  
+
+
+##Weiteres:
+fals jemand Interesse an einem weiterem DDD(DomainDrivenDesign) Projekt hat:
+[DDDOnlineStore.Net](https://github.com/thecodemonkey/DDDOnlineStore.Net)
+Bei diesem Projekt  liegt der Focus vor allem auf der Kombination zwischen DDD und EntityFramework. Auch wenn ich die EF Implementierung mittlerweile etwas anderes machen würd, ist die ein möglcher Ansatz! 
+
+
