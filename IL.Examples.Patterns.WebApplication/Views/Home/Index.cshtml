@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html ng-app="application">
+    <head>                  
+        <title>Bootstrap tests</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="@Url.Content("~/clientApplication/lib/bootstrap/bootstrap-combined.min.css")"/> 
+        <link rel="stylesheet" href="@Url.Content("~/clientApplication/css/app.login.css")" />
+        <link rel="stylesheet" href="@Url.Content("~/clientApplication/css/app.common.layout.css")" />
+        <link rel="stylesheet" href="@Url.Content("~/clientApplication/lib/angular/plugins/ng-grid.min.css")" />
+        <link rel="stylesheet" href="@Url.Content("~/clientApplication/lib/glyphicons/css/bootstrap-glyphicons.css")" />
+    </head>
+    <body ng-controller="GridCtrl">
+        <div class="container" ng-show="IsAuthenticated">
+              <a href="#" class="btn" ng-click="Edit(null, 'Einen neuen Benutzer hinzufügen')"><i class="icon-plus"></i>hinzufügen</a>
+              <a href="Home/Logout" class="btn" ><i class="icon-hand-left"></i>logout</a>
+              <input type="checkbox" ng-model="autoUpdate" />auto update                     
+              <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Password</th>
+                    <th></th>
+                </tr>
+                <tr ng-repeat="user in Users | orderBy:'ID':true"> 
+                    <td>{{user.ID}}</td>
+                    <td>{{user.Name}}</td>
+                    <td>{{user.Password}}</td>
+                    <td><a href="#" class="btn" ng-click="Edit(user, 'Benutzer bearbeiten')"><i class="icon-pencil"></i></a>
+                        <a href="#" class="btn btn-danger" ng-click="Delete(user.ID)"><i class="icon-remove"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        @Html.Partial("Login")
+
+        @Html.Partial("Editor")
+
+        <script src="@Url.Content("~/clientApplication/lib/jquery/jquery-2.0.3.min.js")"></script>
+        <script src="@Url.Content("~/clientApplication/lib/angular/angular.min.js")"></script>
+        <script src="@Url.Content("~/clientApplication/lib/angular/plugins/ng-grid.min.js")"></script>
+        <script src="@Url.Content("~/clientApplication/js/app.init.js")"></script>
+        <script src="@Url.Content("~/clientApplication/js/app.controllers.js")"></script>
+
+        <script src="@Url.Content("~/clientApplication/lib/angular/ui-bootstrap-custom-0.5.0.min.js")"></script>
+        <script src="@Url.Content("~/clientApplication/lib/angular/ui-bootstrap-custom-tpls-0.5.0.min.js")"></script>
+
+        <script>
+            var _xToken = '@ViewBag.XToken';
+        </script>
+    </body>
+</html>

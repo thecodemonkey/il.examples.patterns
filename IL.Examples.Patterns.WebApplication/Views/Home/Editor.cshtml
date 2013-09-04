@@ -1,0 +1,47 @@
+﻿<div modal="isEditorOpen" close="isEditorOpen=false" options="{backdropFade:true,dialogFade:true}">
+  <div class="modal-header">
+    <h3>{{EditorTitle}}</h3>
+  </div>
+  <div class="modal-body">
+        <form class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label">Benutzername</label>
+                <div class="controls">
+                  <input type="text" ng-model="SelectedUser.Name">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Password</label>
+                <div class="controls">
+                  <input type="password" ng-model="SelectedUser.Password">
+                </div>
+              </div>
+            <hr />
+            <div ng-show="SelectedUser.ID > 0">
+              <div class="control-group">
+                <label class="control-label">Vorname</label>
+                <div class="controls">
+                  <input type="text" ng-model="SelectedUser.ContactFirstName">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Nachname</label>
+                <div class="controls">
+                  <input type="text" ng-model="SelectedUser.ContactLastName">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">EMail</label>
+                <div class="controls">
+                  <input type="text" ng-model="SelectedUser.ContactEMail">
+                </div>
+              </div>
+            </div>
+        </form>
+      <div ng-show="ErrorMessage != null" class="alert alert-error">{{ErrorMessage}}</div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" ng-click="isEditorOpen=false">abbrechen</a>
+    <a href="#" class="btn btn-primary" ng-click="Save()">speichern</a>
+  </div>
+</div>
