@@ -31,6 +31,10 @@ IL.Examples.Patterns.Console\UnityConfig.cs
 
 Damit die Beispiele richtig funktionieren sollte nur ein Repository gleichzeit registriert werden!
 
+<b>Die Zugangsdaten für die Webanwendung:</b>
+
+usr: admin<br/>
+pwd: admin
 
 
 ##Wichtig:
@@ -46,6 +50,8 @@ Dieser sollte durch eigenen ersetzt werden. Der Pfad ist relativ zum WebApplicat
 Das WPF Projekt ist leider noch nicht fertiggeworden, das werde ich aber auf jeden Fall nachholen, wenn Einer Lust hat, der 
 kann da gerne aushelfen.  
 
+Die Webanwendung sollte am anfang mit dem EFRepository gestartet werden, dadurch wird die Datenbank mit den entsprechenden Daten angelegt. 
+Anschließend kann man die Repositories wechseln.
 
 ##Weiteres:
 fals jemand Interesse an einem weiteren DDD(DomainDrivenDesign) Beispiel-Projekt hat, hier ist es:
